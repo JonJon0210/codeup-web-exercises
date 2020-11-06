@@ -25,7 +25,7 @@ console.log(sayHello("Jon"))
  */
 
 var helloMessage = sayHello("Jon");
-console.log(helloMessage)
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -80,7 +80,7 @@ console.log(isTwo(random))
  */
 
 function calculateTip(tipPercent,total) {
-    return tipPercent * total
+    return tipPercent * total;
 
 
 }

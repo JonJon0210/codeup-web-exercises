@@ -1,22 +1,18 @@
 "use strict";
 
-// function showMultiplicationTable(num) {
-//     for (var i = 1; i < 11; i++) {
-//         console.log(num + "x" + i + "=" + (num * i))
-//     }
-//
-// }
-//
-// showMultiplicationTable(7)
+function showMultiplicationTable(num) {
+    for (var i = 1; i < 11; i++) {
+        console.log(num + "x" + i + "=" + (num * i))
+    }
+
+}
 
 
 
-
-var randomNumber=(Math.random() * 100 + 20).toFixed(0);
 
 
 for(var i= 0; i < 10; i++) {
-    var randomNumber=(Math.random() * 100 + 20).toFixed(0);
+    var randomNumber = Math.floor(Math.random() * (200 - 20) + 20);
     if (randomNumber % 2 == 0) {
         console.log(randomNumber + " is even");
     } else {
@@ -28,11 +24,17 @@ for(var i= 0; i < 10; i++) {
 
 
 
-// for (var j = 1; j < 10; j++) {
-//     var string = j.toString();
-//     console.log(Number(string.repeat(j)));
-// }
-//
-// for (var k = 100; i >= 5; i -= 5) {
-//         console.log(k)
-//     }
+for (var outer = 1; outer < 10; outer++) {
+    var output = "";
+    for (var inner = 1; inner <= outer; inner++) {
+        outer = output + outer;
+    }
+    console.log(output);
+}
+
+
+
+
+for (var k = 100; i >= 5; i -= 5) {
+        console.log(k)
+    }

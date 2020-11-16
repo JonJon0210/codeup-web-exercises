@@ -24,5 +24,17 @@
 // console.log("Yeah, I sold all of my ice cream!")
 
 
+var carMake = [
+    "Ford",
+    "Dodge",
+    "Chevy",
+    "Mitsubishi",
+    "Toyota",
+    "Cadillac"];
+
+console.log(carMake.length);
+
+console.log(carMake[1]);
+
 
 

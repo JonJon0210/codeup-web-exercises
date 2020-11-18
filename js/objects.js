@@ -31,7 +31,7 @@
     person.sayHello = function() {
         return ("Hello from " + person.firstName + " " + person.lastName + "!");
     }
-    console.log(person.sayHello())
+    console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -77,6 +77,52 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+    var books = [
+        {
+            title: "The Giver",
+            author: {
+                firstName: "Lois",
+                lastName: "Lowry",
+            }
+        },
+        {
+            title: "The Old Man And The Sea",
+            author: {
+                firstName: "Ernest",
+                lastName: "Hemingway",
+            }
+        },
+        {
+            title: "The Catcher And The Rye",
+            author: {
+                firstName: "J.D.",
+                lastName: "Salinger",
+            }
+        },
+        {
+            title: "Of Mice And Men",
+            author: {
+                firstName: "John",
+                lastName: "Steinbeck",
+            }
+        },
+        {
+            title: "To Kill A Mockingbird",
+            author: {
+                firstName: "Harper",
+                lastName: "Lee",
+            }
+        },
+
+    ]
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
+
+    console.log(books[3].title)
+    console.log(books[3].author.firstName)
+    console.log(books[3].author.lastName)
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -101,6 +147,12 @@
      *      ---
      *      ...
      */
+    for (var i = 0; i <= 4; i++) {
+        console.log("Book # " + [i]);
+        console.log("Title: " + books[i].title);
+        console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+    }
+
 
     /**
      * Bonus:
@@ -113,4 +165,12 @@
      *   `showBookInfo` function.
      */
 
+    function showBookInfo(book) {
+        var str = "Title:" + book.title + "\n";
+        str += "Author: " + book.author.firstName + " " + book.author.lastName;
+        return str;
+    }
+    books.forEach(function(book, index) {
+        console.log("Book #" + (index + 1) + "\n" + showBookInfo(book))
+    })
 })();

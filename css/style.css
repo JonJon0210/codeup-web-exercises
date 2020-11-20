@@ -1,3 +1,44 @@
 .fancy-header {
     color:purple;
 }
+
+h1 {
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: lawngreen;
+    text-decoration: underline;
+}
+
+body {
+    background-color: darkblue;
+}
+
+body {
+    background: url("../img/background1.jpg");
+}
+
+ol {
+    list-style: square;
+}
+
+ul {
+    list-style: upper-alpha;
+}
+
+body {
+   font-style: oblique;
+}
+
+table {
+    background-color: red;
+}
+
+td {
+    background-color: darkorchid;
+}
+
+tr {
+    background-color: slategray;
+}

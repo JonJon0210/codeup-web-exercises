@@ -88,6 +88,21 @@ div.single-box {
     align-items: center;
     flex-wrap: wrap;
 }
+#box-container-3 div.box3 {
+    align-self: flex-start;
+}
+#box-container-3 div.box1, #box-container-3 div.box5 {
+    align-self: flex-end;
+}
+#box-container-3 div.box2 {
+    flex-grow: 1;
+}
+#box-container-3 div.box3 {
+    flex-grow: 3;
+}
+#box-container-3 div.box4 {
+    flex-grow: 1;
+}
 #box-container-3 div.single-box {
     height: auto;
     width: 100px;
@@ -98,8 +113,10 @@ div.single-box {
 /******************* 3 subcontainers *****************/
 #box-container-4 {
     /* TODO: Declare the display to be flex */
+    display: flex;
     /* TODO: Set up flex properties for this container */
-
+    justify-content: space-between;
+    flex-wrap: wrap;
     /*height: 450px;         !* Only using this to show align-items at large resolutions *!*/
 }
 @media screen and (max-width: 779px) {
@@ -110,29 +127,33 @@ div.single-box {
 }
 #box-container-4 div.nested-flex-box {
     /* TODO: Declare the display to be flex */
+    display: inherit;
     /* TODO: Set up flex properties for this container */
-
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0 15px;  /* Keep the three columns nicely separated visually */
+
 }
 #box-container-4 div.nested-flex-box.third {
     /* TODO: Set up flex properties for this container */
+
 }
 #box-container-4 div.single-box {
     font-size: 1.5em;
     height: auto;
     border-radius: 10px;
-    padding: 10px 20px;   /* Giving these a really "button" look */
+    padding: 20px 45px;   /* Giving these a really "button" look */
     margin-bottom: 20px;
     width: auto;
 }
 
 /* TODO: Give each of these boxes a random order to see how we can change the order with CSS */
-#box-container-4 .box1 {  }
-#box-container-4 .box2 {  }
-#box-container-4 .box5 {  }
-#box-container-4 .box7 {  }
-#box-container-4 .box10 {  }
-#box-container-4 .box12 {  }
+#box-container-4 .box1 { order: 2 }
+#box-container-4 .box2 { order: 4 }
+#box-container-4 .box5 { order: 1 }
+#box-container-4 .box7 { order: 2 }
+#box-container-4 .box10 { order: 1 }
+#box-container-4 .box12 { order: 6 }
 
 
 /******************* FLEX GROW *****************/

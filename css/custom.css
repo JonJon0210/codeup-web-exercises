@@ -1,0 +1,26 @@
+.jumbotron {
+    background-image: url("../img/pizza.png");
+    background-repeat: round;
+    .d-sm-none .d-md-block
+}
+.jumbotron h1 {
+    text-align: center;
+    background-color: white;
+    opacity: .6;
+    color: black;
+}
+.btn-primary {
+    display: flex;
+    flex-grow: 10;
+}
+.card-footer .btn-primary {
+    display: inline-flex;
+    float: right;
+}
+.card-header {
+    text-align: left;
+    float: left;
+}
+.form-check {
+    text-align: left;
+}

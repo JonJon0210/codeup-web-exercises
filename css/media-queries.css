@@ -1,0 +1,34 @@
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+.alert-info {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
+    text-align: center;
+}
+li {
+    display: flex;
+    background-color: #DDDDDD;
+    margin-top: 2em;
+    text-align: center;
+}
+ul > li {
+    display: flex;
+    align-items: center;
+    block-size: 1em;
+    width: 12em;
+    height: 2em;
+}

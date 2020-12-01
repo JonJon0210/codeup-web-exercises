@@ -1,0 +1,36 @@
+body {
+    background-color: darkgreen;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    body {
+        background-color: deeppink;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-color: indigo;
+    }
+}
+@media screen and (min-width: 1201px) {
+    body {
+        background-color: deeppink;
+    }
+}
+/* @media screen and (max-width: 1200px) {
+    body {
+        background-color: gold;
+    }
+}
+@media screen and (max-width: 1500px) {
+    body {
+        background-color: darkorange;
+    }
+}
+
+ */

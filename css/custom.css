@@ -1,7 +1,6 @@
 .jumbotron {
     background-image: url("../img/pizza.png");
     background-repeat: round;
-    .d-sm-none .d-md-block
 }
 .jumbotron h1 {
     text-align: center;

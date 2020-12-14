@@ -6,7 +6,7 @@ for (var i = 0; i <= 100; i++) {
     } else if (i % 5 === 0 ) {
         console.log(i + " Buzz");
     } else if (i % 3 === 0 && i % 5 === 0 ) {
-        console.log(i + " Fizz Buzz");
+        console.log(i + " Fzz Buzz");
     } else {
         console.log(i);
     }

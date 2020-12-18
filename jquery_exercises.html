@@ -26,21 +26,42 @@
 <script src="js/jquery-2.2.4.js"></script>
 <script type="text/javascript">
     "use strict";
-    $(document).ready(function() {
-        alert("The window document is completely ready!");
-    })
+    // $(document).ready(function() {
+    //     alert("The window document is completely ready!");
+    // })
+    //
+    // var contents = $("#list1").html();
+    // alert(contents);
+    //
+    // $(".codeup").css('border', '1px solid red');
+    //
+    // $("li").css("font-size", "20px");
+    //
+    // $("h1, p, li").css("background-color", "yellow");
+    //
+    // var contents2 = $("h1").html();
+    // alert(contents2);
 
-    var contents = $("#list1").html();
-    alert(contents);
+    $("h1").click(
+        function() {
+            $(this).css("background-color", "green");
+        }
+    );
 
-    $(".codeup").css('border', '1px solid red');
+    $("p").dblclick(
+        function(e) {
+            $(this).css("font-size", "18px");
+        }
+    );
 
-    $("li").css("font-size", "20px");
-
-    $("h1, p, li").css("background-color", "yellow");
-
-    var contents2 = $("h1").html();
-    alert(contents2);
+    $('li').hover(
+        function() {
+            $(this).css('color', '#FF0000');
+        },
+        function() {
+            $(this).css('color', '#000000');
+        }
+    );
 
 
 

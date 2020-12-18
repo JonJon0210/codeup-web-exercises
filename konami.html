@@ -10,16 +10,50 @@
 <script>
     "use strict";
 
-    // Konami Code keys
-    const codeKonami = [38,38,40,40,37,39,37,39,66,65,13]
+    // a key map of allowed keys
+    var allowedKeys = {
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down',
+        65: 'a',
+        66: 'b',
+        13: 'enter'
+    };
 
-    // a variable to remember the 'position' the user has reached so far.
-    var konamiCodePosition = 0;
+    $(document).keyup(function(e){
+        // Konami Code keys
+        var codeKonami = [38,38,40,40,37,39,37,39,66,65,13]
+        // a variable to remember the 'position' the user has reached so far.
+        var konamiCodePosition = 0;
+        // get the value of the key code from the key map
+        var key = allowedKeys[e.keyCode];
+        // get the value of the required key from the konami code
+        var requiredKey = codeKonami[konamiCodePosition];
 
+        // compare the key with the required key
+        if (key == requiredKey) {
 
-    $(document).keyup(function(event){
-        if (.keyup === )
+            // move to the next key in the konami code sequence
+            konamiCodePosition++;
+
+            // if the last key is reached, activate cheats
+            if (konamiCodePosition == codeKonami.length) {
+                activateCheats();
+                konamiCodePosition = 0;
+            }
+        } else {
+            konamiCodePosition = 0;
+        }
     });
+    function activateCheats() {
+        document.body.style.backgroundImage = "url('images/konami-logo-00-e1370540325110.jpg')";
+
+        var audio = new Audio('audio/konami_logo.mp3');
+        audio.play();
+
+        alert("cheats activated");
+    }
 
 
 </script>

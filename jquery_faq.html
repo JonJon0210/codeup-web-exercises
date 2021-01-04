@@ -72,6 +72,7 @@
 
 <button id="button2" type="button">Button 2</button>
 
+
 <script src="js/jquery-2.2.4.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -86,13 +87,16 @@
 
     $(document).ready(function() {
         $("#button2").click(function() {
-            $("ul li:last-child").addClass("yellow-background");
-
+            // $("ul li:last-child").addClass("yellow-background");
+            $("ul").each(function () {
+                $(this).children().last().addClass("yellow-background");
+            })
         })
 
         $("h3").click(function() {
             $("ul").children().addClass("bold");
         })
+
         $("li").click(function() {
             $("ul li:first-child").addClass("colorBlue");
         })

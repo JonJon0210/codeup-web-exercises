@@ -92,23 +92,19 @@
         })
     })
 
-    $(document).ready(function() {
-        $("#button2").click(function() {
-            // $("ul li:last-child").addClass("yellow-background");
-            $("ul").each(function () {
-                $(this).children().last().addClass("yellow-background");
-            })
+    $("#button2").click(function() {
+        // $("ul li:last-child").addClass("yellow-background");
+        $("ul").each(function () {
+            $(this).children().last().addClass("yellow-background");
         })
+    })
 
         $("ul").addClass("invisible");
 
         $("h3").click(function() {
+            $("ul").children().addClass("bold");
             $(this).next().slideToggle(2500);
             $(this).next().toggleClass("invisible");
-        })
-
-        $("h3").click(function() {
-            $("ul").children().addClass("bold");
         })
 
         $("li").click(function() {
@@ -119,7 +115,8 @@
             $(this).parent().addClass("invisible");
         })
 
-    })
+        $("#register").hide().delay(8000).show(500);
+
 
 
 </script>

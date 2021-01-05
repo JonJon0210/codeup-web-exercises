@@ -17,6 +17,13 @@
 </head>
 <body>
 
+<div>
+    <h1>Would you like to sign up for our newsletter?</h1>
+
+    <span>X</span>
+
+</div>
+
 
 <p>National Parks FAQ's</p>
 <dl>
@@ -79,11 +86,11 @@
 
 <script>
 
-    // $(document).ready(function() {
-    //     $("#button").click(function() {
-    //         $("dd").toggleClass("invisible");
-    //     })
-    // })
+    $(document).ready(function() {
+        $("#button").click(function() {
+            $("dd").toggleClass("invisible");
+        })
+    })
 
     $(document).ready(function() {
         $("#button2").click(function() {
@@ -93,6 +100,13 @@
             })
         })
 
+        $("ul").addClass("invisible");
+
+        $("h3").click(function() {
+            $(this).next().slideToggle(2500);
+            $(this).next().toggleClass("invisible");
+        })
+
         $("h3").click(function() {
             $("ul").children().addClass("bold");
         })
@@ -100,9 +114,12 @@
         $("li").click(function() {
             $("ul li:first-child").addClass("colorBlue");
         })
+
+        $("span").click(function() {
+            $(this).parent().addClass("invisible");
+        })
+
     })
-
-
 
 
 </script>

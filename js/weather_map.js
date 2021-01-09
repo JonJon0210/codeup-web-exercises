@@ -10,12 +10,12 @@ var map = new mapboxgl.Map({
 });
 
 
-var marker = new mapboxgl.Marker({
-    color: "green",
-    draggable: true
-})
-    .setLngLat([-98.4916, 29.4252])
-    .addTo(map);
+// var marker = new mapboxgl.Marker({
+//     color: "green",
+//     draggable: true
+// })
+//     .setLngLat([-98.4916, 29.4252])
+//     .addTo(map);
 
 
 
@@ -27,4 +27,4 @@ var marker = new mapboxgl.Marker({
 //     map.setZoom(20);
 //     marker.setLngLat(result);
 // })
-
+//

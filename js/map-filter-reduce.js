@@ -40,4 +40,21 @@ $(document).ready(function() {
             yearsOfExperience: 9
         }
     ];
+
+
+    const langFil = users.filter(user => user.languages.length >= 3)
+    console.log(langFil)
+
+    const email = users.map(user => user.email)
+    console.log(email)
+
+    const experience = users.reduce((total, user) => total + user.yearsOfExperience, 0);
+    console.log(experience + " total years experience, average " + (experience/users.length) + " years experience" +
+        " per user");
+
+    const longestEmailUser = users.reduce((currentLongest, user) => user.email.length > currentLongest.email.length ? user : currentLongest, users[0]);
+    console.log(longestEmailUser.name + " Has the longest email address, with: " + longestEmailUser.email);
+
+
+
 })

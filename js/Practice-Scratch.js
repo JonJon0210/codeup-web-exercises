@@ -24,14 +24,14 @@ for (var i = 0; i <= 100; i++) {
     }
 }
 
-//jquery
+jquery
 
-// function sayHello(name) {
-//     return 'Hello, ' + name + '!';
-// }e.log('An error occured!'));
+function sayHello(name) {
+    return 'Hello, ' + name + '!';
+}e.log('An error occured!'));
 
 const sayHello = (name) => { 'Hello, ' + name + '!' }
 
-// const sayHello = name => { 'Hello, ' + name + '!' }
-//
-// const sayHello = (name) => `Hello, ${name}!`
+const sayHello = name => { 'Hello, ' + name + '!' }
+
+const sayHello = (name) => `Hello, ${name}!`
